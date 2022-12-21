@@ -9,16 +9,20 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-
+            @foreach($comics as $comic)
             <div class="col-2">
-                <a href="#">
-                    <img src="" alt="">
-                    <p></p>
+                @if($comic === $comics[0])
+                <a href="{{route('description')}}">
+                    <img src="{{$comic['thumb']}}" alt="">
+                    <p>{{$comic['series']}}</p>
                 </a>
 
-
+                @else
+                <img src="{{$comic['thumb']}}" alt="title">
+                <p>{{$comic['series']}}</p>
+                @endif
             </div>
-
+            @endforeach
         </div>
     </div>
     <div class="load_more">
@@ -27,11 +31,12 @@
 </div>
 <div class="my-container">
     <div class="row">
+        @foreach(Config::get('db.icons') as $icon)
         <div class="col">
-            <img src="">
-            <h3></h3>
+            <img src="{{ Vite::asset('resources/img/' . $icon['image']) }}">
+            <h3>{{$icon['text']}}</h3>
         </div>
-
+        @endforeach
     </div>
 </div>
 @endsection
