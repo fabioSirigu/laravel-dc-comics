@@ -11,9 +11,9 @@
         <div class="row">
             @foreach($comics as $comic)
             <div class="col-2">
-                <a href="{{route('description')}}">
-                    <img src="{{$comic['thumb']}}" alt="">
-                    <p>{{$comic['series']}}</p>
+                <a href="{{route('comics.show', $comic->id)}}">
+                    <img src="{{$comic->thumb}}" alt="">
+                    <p>{{$comic->title}}</p>
                 </a>
 
             </div>
