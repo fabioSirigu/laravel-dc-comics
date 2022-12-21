@@ -15,9 +15,10 @@ class PageController extends Controller
 
     public function description()
     {
+        /* $comics = Comic::all();
         $data = [
             'thumb' => config('db.comics'),
-        ];
-        return view('description', $data);
+        ]; */
+        return view('description');
     }
 }

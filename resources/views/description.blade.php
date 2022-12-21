@@ -5,15 +5,11 @@
 </section>
 <div class="container py-5">
       <div class="d-flex gap-4">
-            <img src="{{$comics->src}}" alt="{{$product->title}}">
+            <img src="" alt="">
             <div class="details">
-                  <h1>{{$comic->title}}</h1>
-                  <p>{{$comic->description}}</p>
-                  <div class="meta">
-                        <div class="cooking_time">
-                              Cooking time: {{$comic->series}}
-                        </div>
-                  </div>
+                  <h1>titolo</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum temporibus illo eum magnam nobis enim officiis quos neque doloribus.</p>
+
 
             </div>
       </div>
