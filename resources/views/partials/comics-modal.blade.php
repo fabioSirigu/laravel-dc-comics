@@ -6,7 +6,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                        Stai per effettuare un operazione distruttiva, sei sicuro sicuro?
+                        Stai per cancellare definitivamente un fumetto, sei sicuro?
                   </div>
                   <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
